@@ -1162,6 +1162,10 @@ p:last-child {
     font-size: 0.94rem;
     text-align: left;
   }
+
+  .home-page .hero-media {
+    display: none;
+  }
 }
 
 /* ============================================
@@ -1353,6 +1357,12 @@ body {
 
   .credibility-item {
     white-space: normal;
+  }
+
+  .credibility-item::before {
+    content: '•';
+    color: rgba(255, 255, 255, 0.45);
+    margin-right: 8px;
   }
 
   .credibility-item + .credibility-item::before {
