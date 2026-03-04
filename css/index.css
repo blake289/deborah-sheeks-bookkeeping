@@ -1003,6 +1003,14 @@ p:last-child {
   text-align: center;
 }
 
+.photo-caption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.92rem;
+  font-style: italic;
+  color: rgba(27, 46, 90, 0.8);
+}
+
 @media (min-width: 1280px) {
   .hero-layout {
     grid-template-columns: 1fr 1fr;
