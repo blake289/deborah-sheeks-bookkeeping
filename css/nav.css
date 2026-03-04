@@ -52,6 +52,10 @@
     width: auto;
 }
 
+.nav-logo-img {
+    max-width: 200px;
+}
+
 @media (min-width: 1024px) {
     .nav-logo img {
         max-height: 50px;
@@ -342,6 +346,9 @@
     font-size: 24px;
     font-weight: var(--font-weight-semibold);
     color: var(--color-navy);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
     transition: color var(--transition-fast);
 }
 
@@ -368,6 +375,9 @@
     font-weight: var(--font-weight-medium);
     color: var(--color-navy);
     opacity: 0.8;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
     transition: color var(--transition-fast), opacity var(--transition-fast);
 }
 
@@ -395,6 +405,7 @@
     font-weight: var(--font-weight-semibold);
     color: var(--color-navy);
     margin-bottom: var(--space-lg);
+    min-height: 44px;
 }
 
 .mobile-menu-phone svg {
@@ -405,4 +416,94 @@
 /* Body scroll lock when mobile menu is open */
 body.menu-open {
     overflow: hidden;
+}
+
+@media (max-width: 1023px) {
+    .nav {
+        height: 68px;
+    }
+
+    .nav-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav-logo-img {
+        max-width: 160px;
+        max-height: 34px;
+    }
+
+    .hamburger {
+        width: 44px;
+        height: 44px;
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding: 96px 20px 28px;
+        overflow-y: auto;
+    }
+
+    .mobile-menu-links {
+        align-items: flex-start;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .mobile-menu-link {
+        width: 100%;
+        font-size: 22px;
+        padding: 6px 0;
+    }
+
+    .mobile-submenu {
+        align-items: flex-start;
+        width: 100%;
+        padding-left: 12px;
+        margin-top: 0;
+        gap: 4px;
+    }
+
+    .mobile-submenu-link {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .mobile-menu-bottom {
+        margin-top: auto;
+        width: 100%;
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    .mobile-menu-phone {
+        justify-content: flex-start;
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+
+    .mobile-menu-bottom .btn {
+        width: 100%;
+        min-height: 44px;
+        padding: 14px 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .mobile-menu {
+        padding: 86px 16px 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .mobile-menu {
+        display: none;
+    }
 }

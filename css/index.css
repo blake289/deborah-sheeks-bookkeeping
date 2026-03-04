@@ -1248,6 +1248,193 @@ p:last-child {
   }
 }
 
+/* ============================================
+   SITEWIDE MOBILE HARDENING
+   ============================================ */
+html,
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .btn,
+  .btn-ghost {
+    min-height: 44px;
+  }
+
+  .hero-cta-group {
+    gap: 12px;
+  }
+
+  .credibility-strip {
+    flex-wrap: wrap;
+    overflow: visible;
+    white-space: normal;
+  }
+
+  .credibility-item {
+    white-space: normal;
+  }
+
+  .hero-interior {
+    padding-top: 112px;
+  }
+
+  .quickbooks-badges {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    justify-items: center;
+  }
+
+  .quickbooks-badges img {
+    width: min(44vw, 170px);
+    height: auto !important;
+    max-width: 100%;
+  }
+
+  .cta-banner {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .cta-banner .btn {
+    min-width: min(420px, 100%);
+  }
+
+  .two-col {
+    gap: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+  }
+
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .hero-layout {
+    gap: 24px;
+  }
+
+  .hero-content {
+    order: 1;
+  }
+
+  .hero-media {
+    order: 2;
+  }
+
+  .hero-subtitle {
+    max-width: 100%;
+  }
+
+  .credibility-strip {
+    flex-wrap: wrap;
+    overflow: visible;
+    white-space: normal;
+    gap: 10px;
+  }
+
+  .credibility-item {
+    white-space: normal;
+  }
+
+  .credibility-item + .credibility-item::before {
+    margin-right: 8px;
+  }
+
+  .hero-cta-group {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-btn-primary,
+  .hero-btn-secondary {
+    width: 100%;
+  }
+
+  .two-col,
+  .two-col-equal,
+  .two-col-reverse {
+    grid-template-columns: 1fr !important;
+  }
+
+  .two-col-image {
+    order: 1;
+    justify-self: center;
+  }
+
+  .two-col-content {
+    order: 2;
+  }
+
+  .two-col-equal .two-col-image img {
+    width: min(200px, 100%);
+    max-width: 200px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 999px;
+    margin: 0 auto;
+  }
+
+  .card {
+    text-align: left;
+    padding: 22px 20px;
+  }
+
+  .card .btn-ghost {
+    min-height: 44px;
+    align-items: center;
+  }
+
+  .trust-badges {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .trust-badge {
+    align-items: center;
+    text-align: center;
+  }
+
+  .cta-banner .btn {
+    width: 100%;
+  }
+
+  .quote-block {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero {
+    padding-top: 78px;
+  }
+}
+
 /* Interior Page Hero */
 .hero-interior {
   min-height: 280px;

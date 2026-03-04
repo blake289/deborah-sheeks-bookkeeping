@@ -146,3 +146,41 @@
     font-size: 13px;
     color: rgba(255, 255, 255, 0.5);
 }
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 44px 0 24px;
+    }
+
+    .footer-container {
+        padding: 0 16px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .footer-brand,
+    .footer-links,
+    .footer-contact {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .footer-links a,
+    .footer-contact-item a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .footer-contact-item {
+        align-items: flex-start;
+    }
+
+    .footer-bottom {
+        margin-top: 24px;
+        padding-top: 16px;
+    }
+}
