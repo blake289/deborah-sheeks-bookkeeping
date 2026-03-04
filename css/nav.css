@@ -8,10 +8,11 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
+    height: 72px;
     background-color: var(--color-white);
     z-index: 1000;
-    transition: box-shadow var(--transition-base);
+    border-bottom: 1px solid transparent;
+    transition: background-color var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
 }
 
 .nav.scrolled {
@@ -19,9 +20,9 @@
 }
 
 .nav-container {
-    max-width: var(--container-max-width);
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 var(--container-padding-mobile);
+    padding: 0 24px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -30,13 +31,13 @@
 
 @media (min-width: 768px) {
     .nav-container {
-        padding: 0 var(--container-padding-tablet);
+        padding: 0 40px;
     }
 }
 
 @media (min-width: 1024px) {
     .nav-container {
-        padding: 0 var(--container-padding-desktop);
+        padding: 0 80px;
     }
 }
 
@@ -202,6 +203,65 @@
 
 .nav-cta {
     padding: 12px 24px;
+}
+
+/* Homepage dark hero navigation treatment */
+.home-page .nav {
+    background-color: var(--color-white);
+    border-bottom-color: rgba(27, 46, 90, 0.1);
+    backdrop-filter: none;
+}
+
+.home-page .nav .nav-link,
+.home-page .nav .nav-phone,
+.home-page .nav .nav-dropdown-trigger,
+.home-page .nav .nav-dropdown-trigger svg {
+    color: var(--color-navy);
+}
+
+.home-page .nav .nav-phone {
+    font-weight: 500;
+    opacity: 0.75;
+}
+
+.home-page .nav .hamburger-line {
+    background-color: var(--color-navy);
+}
+
+.home-page .nav .nav-logo-img {
+    filter: none;
+}
+
+.home-page .nav .nav-cta {
+    background-color: #183466;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0 6px 18px rgba(16, 39, 78, 0.28);
+}
+
+.home-page .nav .nav-cta:hover {
+    background-color: #1f437f;
+    transform: translateY(-1px);
+}
+
+.home-page .nav.scrolled {
+    background-color: var(--color-white);
+    border-bottom-color: rgba(27, 46, 90, 0.1);
+}
+
+.home-page .nav.scrolled .nav-link,
+.home-page .nav.scrolled .nav-phone,
+.home-page .nav.scrolled .nav-dropdown-trigger,
+.home-page .nav.scrolled .nav-dropdown-trigger svg {
+    color: var(--color-navy);
+}
+
+.home-page .nav.scrolled .hamburger-line {
+    background-color: var(--color-navy);
+}
+
+.home-page .nav.scrolled .nav-phone {
+    opacity: 0.75;
 }
 
 /* Hamburger Menu Button */
